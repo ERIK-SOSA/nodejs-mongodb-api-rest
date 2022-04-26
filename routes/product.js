@@ -42,7 +42,7 @@ function productApi(app) {
             const productUpdate = await productService.updateProduct(id, nombre, precio, cantidad, peso);
             res.status(200).json({
                 data: productUpdate,
-                message: "post product succesfully"
+                message: "product succesfully update"
             })
         } catch (err) {
             next(err);
